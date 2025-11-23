@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Rating Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🍽 Rate Your Food</h1>
+
+    <div class="food-card">
+        <h2>Pizza</h2>
+        <div class="stars">
+            <span onclick="rate(1)">★</span>
+            <span onclick="rate(2)">★</span>
+            <span onclick="rate(3)">★</span>
+            <span onclick="rate(4)">★</span>
+            <span onclick="rate(5)">★</span>
+        </div>
+        <p id="rating-result">Rating: Not rated yet</p>
+
+        <textarea id="review" placeholder="Write your review..."></textarea>
+        <button onclick="submitReview()">Submit Review</button>
+
+        <h3>Reviews:</h3>
+        <ul id="review-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
